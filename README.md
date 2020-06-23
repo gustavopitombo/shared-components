@@ -52,18 +52,6 @@ Import your component style - ```MyComponent.scss```
 
 ---
 
-#### `dependencies`
-
-- React
-- Typescript
-- SASS
-- Styleguidist
-- TSLint
-- Jest
-- React Testing Library
-
----
-
 #### `how to use`
 
 - import your style-guide global sass file
@@ -77,6 +65,19 @@ Import your component style - ```MyComponent.scss```
 ```js
 import { MyComponent } from 'shared-components';
 ```
+
+---
+
+#### `dependencies`
+
+- React
+- Typescript
+- SASS
+- Styleguidist
+- TSLint
+- Jest
+- React Testing Library
+
 
 ---
 
