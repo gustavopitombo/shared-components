@@ -1,0 +1,62 @@
+{
+  "name": "shared-components",
+  "version": "1.0.0",
+  "private": false,
+  "description": "",
+  "main": "./lib/",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --format codeFrame",
+    "start": "styleguidist server",
+    "start:dev": "tsc --watch",
+    "start:react": "webpack-dev-server --open",
+    "build": "npm run lint && npm run build:clear && tsc && webpack && npm run build:copy",
+    "build:clear": "shx rm -rf ./lib",
+    "build:copy": "shx cp ./src/index.ts ./lib/index.d.ts && shx cp ./src/index.scss ./lib/main.scss",
+    "styleguide:build": "styleguidist build",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@testing-library/dom": "^7.14.2",
+    "@testing-library/jest-dom": "^5.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@types/jest": "^26.0.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-test-renderer": "^16.9.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^26.0.1",
+    "babel-preset-react-app": "^9.1.2",
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "install": "^0.13.0",
+    "jest": "^26.0.1",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.5",
+    "postcss-loader": "^3.0.0",
+    "react-styleguidist": "^11.0.8",
+    "react-test-renderer": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.3",
+    "shelljs": "^0.8.4",
+    "shx": "^0.3.2",
+    "source-map-loader": "^1.0.0",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.1.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello component matches snapshot 1`] = `
+<h1
+  className="hello-world"
+  data-testid="shd-hello"
+>
+  Clique aqui
+</h1>
+`;
